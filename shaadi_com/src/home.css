@@ -1,0 +1,226 @@
+
+.div1{
+
+background-image: url("./images/bghome.jpg");
+background-repeat:no-repeat;
+background-size: cover;
+width: 1800px;
+padding-left: 0px;
+max-width: 100%;
+padding-right: 0px;
+
+display:block;
+
+}
+/* .member_login_arrow {
+    background-position: 0 -492px;
+    display: inline-block;
+    height: 10px;
+    margin: 0 0 0 5px;
+    vertical-align: middle;
+    width: 10px;
+} */
+#home_logo {
+    
+    background-image: url("./images/home-logo.png");
+    position:absolute;
+    height: 30px;
+    background-size: 100%;
+    width: 80px;
+    padding-right: 0%;
+    margin-left: 320px;
+    margin-top: 10px;
+   
+    
+
+}
+.textpart{
+    font-size: 2.2em;
+    font-weight: 500;
+    font-family:'Raleway',sans-serif !important;;
+    color: white;
+    line-height: 50px;
+    text-shadow: 1px 1px 1px #1f2a1f;
+    /* margin-top: 290px auto auto;
+    letter-spacing: 1px;
+    position: relative; */
+    /* margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+    
+   
+}
+
+
+.text{
+   /* margin: 290px auto auto; */
+
+    /* height: 275px; */
+ 
+    
+}
+#loginhelp{
+    
+    height: 26px;
+    width: 300px
+   
+}
+#login{
+   
+  padding-left: 600px;
+
+   
+}
+#help{
+
+
+}
+.a{
+    
+}
+.row{
+    padding-top: 10px;
+    background-color: #00000066;
+    width:fit-content;
+   margin: auto;
+   
+
+}
+.sel{
+    width: auto;
+}
+.menu{
+    color: rgb(24, 18, 18);
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto',sans-serif !important;
+}
+.col-4{
+    width: 33.33333333%;
+    float: left;
+    text-align: center;
+    line-height: 1.42857143;
+}
+.sign-up{
+    background: url(https://img2.shaadi.com/assests/2016/images/home-icon-sprite.png) no-repeat left 1px;
+    height: 148px;
+    width: 133px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    background-size: 100%;
+}
+.special_someone_wrap {
+    margin: 53px 0 72px;
+    line-height: 1.3em;
+}
+.interact{
+    background: url(https://img2.shaadi.com/assests/2016/images/home-icon-sprite.png) no-repeat left -292px;
+    background-size: 100%;
+    height: 148px;
+    width: 133px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+.connect {
+    background: url(https://img2.shaadi.com/assests/2016/images/home-icon-sprite.png) no-repeat left -591px;
+    background-size: 100%;
+    height: 148px;
+    width: 133px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+.div3{
+    margin-bottom: 0px;
+}
+.find_someone_head, .community_find_someone_head {
+    color: #ff5a60;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Raleway',sans-serif!important;
+    font-weight: 500;
+}
+
+
+
+
+.story_carousel {
+    margin: 40px 0 20px;
+}
+.carousel {
+    position: relative;
+}
+.story_carousel .carousel-indicators {
+    bottom: auto;
+    top: 100%;
+}
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.story_carousel .carousel-indicators li {
+    background: #d7d7d7;
+    border: 1px solid #d7d7d7;
+}
+li{
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Roboto',sans-serif!important;
+    color: #72727d;
+    text-align: -webkit-match-parent;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.story_carousel .carousel-control.left {
+    left: -12px;
+}
+.story_carousel .carousel-control.left, .story_carousel .carousel-control.right {
+    background-image: none;
+    display: block;
+    width: auto;
+    filter: none;
+}
+a:link, a:hover, a:visited, a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+.carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgb(0 0 0 / 60%);
+    background-color: rgba(0,0,0,0);
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+.div3{
+    display: block;
+}

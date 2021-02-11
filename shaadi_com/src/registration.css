@@ -1,0 +1,35 @@
+.container{
+    display: block;
+    position: fixed;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    top:149px;
+    left: 0px;
+    text-align: center;
+    /* color: rgb(0,0,0); */
+    background: transparent;
+    cursor: default;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    max-height: 100%;
+
+}
+.row{
+    background: #fff;
+    width: 371px;
+    padding: 30px 15px 27px 15px;
+    font-weight: normal;
+}
+.box{
+    display: inline-block;
+    width: auto;
+    text-align: left;
+    background: transparent;
+    box-sizing: border-box;
+    border: black;
+}
+#head{
+    text-align: center;
+}
