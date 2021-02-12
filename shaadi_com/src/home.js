@@ -16,7 +16,7 @@ language:""
         return (<div className="container col-12">
             <div className="div1">
                 <div className="row1">
-                    <div className="col-6" id="home_logo"></div><div className="col-6" id="loginhelp"><a href="" id="login">login</a><HelpOutlineIcon /><a href="" id="help">help</a></div>
+                    <div className="col-6" id="home_logo"></div><div className="col-6" id="loginhelp"><a href="/" id="login">login</a><HelpOutlineIcon /><a href="" id="help">help</a></div>
                 </div>
                 <div className="text"><h1 className="textpart">We bring people together <br></br>love unites them</h1></div>
                 <div className="sel">

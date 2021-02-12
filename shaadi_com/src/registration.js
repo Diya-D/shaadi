@@ -1,10 +1,12 @@
 import React from 'react'
 import './registration.css'
+import Shaadi from './shaadi'
 import Dialog from '@material-ui/core/Dialog';
 import { Formik, Form, Field } from 'formik'
 import * as Yup from 'yup'
 import { Link } from 'react-router-dom';
 import  Register2 from './reg2';
+import { SwapCalls } from '@material-ui/icons';
 const RegisterSchema = Yup.object().shape({
     username: Yup.string()
         .min(2, 'too short')
@@ -24,7 +26,8 @@ class Register extends React.Component {
     state = {
         username: "",
         password: "",
-        relation: ""
+        relation: "",
+        gender:""
 
     }
 
@@ -38,15 +41,33 @@ class Register extends React.Component {
             password: event.target.value
         })
     }
-    onrelationchange=(event)=>{
+    onrelationselect=(event)=>{
         this.setState({
             relation:event.target.value
             
         })
     }
+    ongenderselect=(event)=>{
+        this.setState({
+            gender:event.target.value
+        })
+    }
 
     onSubmit = (event) => {
         event.preventDefault()
+        let usname=this.state.username;
+        let pwd=this.state.password;
+        let relation=this.state.relation;
+        let gender=this.state.gender;
+
+        Shaadi.register(usname,pwd,relation,gender)
+        .then(response=>{
+            alert("registration success",response.data.message,"success")
+            this.props.history.push("/register2");
+
+         }).catch(err=>{
+             alert("reg failed,",err.response.data.message,"error")
+         })
      
     }
 
@@ -67,11 +88,8 @@ we find Matches for you!</div>
                         initialValues={{
                             username: "",
                             password: "",
-                            relation: ""
-                        }}
-                        onSubmit={values => {
-                            <link to="/reg2"><Register2></Register2></link>
-                           // alert("submit")
+                            relation: "",
+                            gender:""
                         }}
                         validationSchema={RegisterSchema}
                     >
@@ -95,24 +113,35 @@ we find Matches for you!</div>
                                         <select name="relation">
 
                                             <option value="" placeholder="select">Select</option>
-                                            <option value="">Self</option>
-                                            <option value="">Son</option>
-                                            <option value="">Daughter</option>
+                                            <option value="" >Self</option>
+                                            <option value="male">Son</option>
+                                            <option value="female">Daughter</option>
                                             <option value="">Friend</option>
-                                            <option value="">Brother</option>
-                                            <option value="">Sister</option>
+                                            <option value="male">Brother</option>
+                                            <option value="female">Sister</option>
                                             <option value="">Relative</option>
                                         </select>
 
 
                                         {errors.password ? <div>{errors.password}</div> : null}
+
+                                    </div>
+                                    <div className="form-group">
+                                        <form>
+                                        <label for="exampleInputgender">gender</label>
+                                      <br></br>
+                                      <label for="female">female</label>
+                                       <input type="radio" value="female"></input>
+                                       <label for="female">male</label>
+                                       <input type="radio" value="male"></input>
+                                       </form>
                                     </div>
 
 
 
                                     <button type="submit" className="btn btn-primary" id="button">Next</button><br></br>
                                     <small id="emailHelp" className="form-text text-muted">Already a member?</small>
-                                    <a href="/">Login</a>
+                                   <a href="/">Login</a>
                                 </div>
                             </Form>
                         )}

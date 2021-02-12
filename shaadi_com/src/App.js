@@ -1,12 +1,14 @@
+
+import React from 'react'
 import{
   BrowserRouter,
   Switch,
   Route,
-  Link
+
 } from 'react-router-dom'
 import './App.css';
 
-import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
+
 import Home from './home';
 import Register from './registration';
 import Login  from './login'
