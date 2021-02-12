@@ -13,7 +13,7 @@ function getCurrentUser() {
 }
 
 function getUsers() {
-    return User.find({})//.select("username accnum")
+    return User.find({})
     .then(users=>{
         if(users){
             return{
@@ -25,7 +25,7 @@ function getUsers() {
     })
 }
 function registration1(username,password,relation,gender) {
-    // data[username] = { username, password, accnum,history:[],balance:0}
+   
     return User.findOne({
         username
     }).then(user => {
@@ -49,7 +49,7 @@ function registration1(username,password,relation,gender) {
 
 }
 function registration2(fullname, dob, religion, community, place) {
-    // data[username] = { username, password, accnum,history:[],balance:0}
+    
     return User.findOne({
         username
     }).then(user => {

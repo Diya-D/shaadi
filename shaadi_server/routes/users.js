@@ -16,11 +16,7 @@ router.post('/test', function (req, res, next) {
   res.send(req.body.name);
 });
 
-// router.get('/', function (req, res) {
-//    var result=Shaadi.getUsers()
-//    res.send=result
-  
-// });
+
 function authMiddleware(req, res, next) {
   if (req.session.currentUser) {
     next();
@@ -40,7 +36,7 @@ router.post('/register', function (req, res) {
   
   
   
-    Shaadi.registration1(usname, pwd, relation,gender) //Bnk.adduser is a promise here
+    Shaadi.registration1(usname, pwd, relation,gender)
       .then(data => {
         res.status(data.statusCode).send({ message: data.message })
       

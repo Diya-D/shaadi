@@ -73,7 +73,7 @@ class Register extends React.Component {
 
     render() {
         return (
-        <div className="container">
+        <div className="register container">
             <div className="box">
             <div className="row" id="head">
                 <div className="col-3"></div>
@@ -96,6 +96,7 @@ we find Matches for you!</div>
                         {({ errors }) => (
 
                             <Form>
+                                
                                 <div className="jumbotron">
                                     <div className="form-group">
                                         <label for="exampleInputEmail1">Enter your email id</label>

@@ -13,7 +13,7 @@ religion:"",
 language:""
     }
     render() {
-        return (<div className="container col-12">
+        return (<div className="homepage container col-12">
             <div className="div1">
                 <div className="row1">
                     <div className="col-6" id="home_logo"></div><div className="col-6" id="loginhelp"><a href="/" id="login">login</a><HelpOutlineIcon /><a href="" id="help">help</a></div>
